@@ -13,7 +13,7 @@ $.ajax({ url: playlist_url, headers: { "Authorization": token }, method: 'GET' }
     if (res) {
         var playlists = JSON.parse(res.body);
         var playlist_url = playlists.items[0].href
-        $.ajax({ url: playlist_url, headers: { "Authorization": token } }).thwen( function (err, res) {
+        $.ajax({ url: playlist_url, headers: { "Authorization": token } }).then( function (err, res) {
             if (res) {
                 var playlist = JSON.parse(res.body);
                 console.log("plaulist" + playlist.name);
