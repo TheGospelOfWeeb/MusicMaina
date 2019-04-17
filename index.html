@@ -84,7 +84,9 @@
                             res.tracks.items.forEach(function (track) {
                                 console.log(track.track.name);
                                 let trackEl = `<p id="${track.track.name}">${track.track.name}</p>`;
+                                let playButton = `<iframe src="https://open.spotify.com/embed/track/${track.track.id}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`
                                 $('#track-div').append(trackEl);
+                                $('#track-div').append(playButton);
                             });
                             $('#track-div').show();
                         }
@@ -94,7 +96,7 @@
                 }
             })
         }
-
+        
         (function () {
             var stateKey = 'spotify_auth_state';
             /**
@@ -158,7 +160,7 @@
                 }
                 document.getElementById('login-button').addEventListener('click', function () {
                     var client_id = 'bdda5a905c86440392f593d9019ac9f1'; // Your client id
-                    var redirect_uri = 'https://tacticalloli.github.io/MusicMaina/'; // Your redirect uri
+                    var redirect_uri = 'http://127.0.0.1:5500/index.html'; // Your redirect uri
                     var state = generateRandomString(16);
                     localStorage.setItem(stateKey, state);
                     var scope = 'user-read-private user-read-email';
