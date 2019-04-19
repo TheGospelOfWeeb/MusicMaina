@@ -25,7 +25,7 @@
           <!--this is where we could display the artist name once the have searched-->
           <h1 class="display-4" id="artist-name">Artist</h1>
           <!--Bio or someother text info. maybe like how many people searched him through the app idk-->
-          <p class="lead">Bio</p>
+          <p class="lead" id="bio">Bio</p>
           <img id="artist-image" src="https://via.placeholder.com/150" alt="Artist-image">
         </div>
       </div>
@@ -37,14 +37,10 @@
         <!--Thinking about maybe having the Top 5 Songs here. Up to you guys. left 5 div tags but it think we might 
         be able to use JS to add them to the html with the songs-->
         <div class="card border-dark mb-3" style="text-align:center; background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
-            <h5 class="card-header">TBD</h5>
+            <h5 class="card-header">Top 5 Songs</h5>
             <div class="card-body">
-                <h5 class="card-title">Top 5 Songs</h5>
-                <div id="test1"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <h5 class="card-title"></h5>
+                <div id="top-five-songs"></div>
             </div>
         </div>
         <br>
@@ -61,7 +57,15 @@
         <div class="card border-dark mb-3" style="text-align:center; background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
                 <h5 class="card-header" id="num-of-tour-dates">Number of Unpcoming Events</h5>
             <div class="card-body">
-                <h5 class="card-title" id="go-to-tour-dates">Tour dates</h5>
+                <h5 class="card-title" id="go-to-tour-dates"></h5>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="card border-dark mb-3" style="text-align:center; background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
+                <h5 class="card-header">Related Artist</h5>
+            <div class="card-body">
+                <h5 class="card-title" id="related-artist"></h5>
                 <div></div>
             </div>
         </div>
@@ -72,6 +76,6 @@
     <!-- jQuery JS -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Code to the JavaScript File -->
-    <script src="main.js"></script>
+    <script src="assets/script/main.js"></script>
 </body>
 </html>
