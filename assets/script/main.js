@@ -27,7 +27,7 @@ function searchBandsInTown(artist) {
         }
       }
       
-      $("#go-to-tour-dates").append("<div>" + event + "</div>");
+     $("#go-to-tour-dates").append("<div>" + element.venue.name + "</div>");
     });
   }
   
