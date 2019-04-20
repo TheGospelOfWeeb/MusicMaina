@@ -39,7 +39,7 @@ function searchBandsInTown(artist) {
   });
 
   function searchLastFM(artist) {
-    var queryURLLastFM = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artist +"&api_key=be77dd88db13854a4b6bcbd5d6a75bee&format=json";
+    var queryURLLastFM = "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artist +"&api_key=be77dd88db13854a4b6bcbd5d6a75bee&format=json";
     
     $.ajax({
       url:queryURLLastFM,
@@ -59,7 +59,7 @@ function searchBandsInTown(artist) {
     }
     });
 
-    var queryURLLastFMBio = "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist="+ artist +"&api_key=be77dd88db13854a4b6bcbd5d6a75bee&format=json"
+    var queryURLLastFMBio = "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist="+ artist +"&api_key=be77dd88db13854a4b6bcbd5d6a75bee&format=json"
 
     $.ajax({
       url:queryURLLastFMBio,
@@ -69,7 +69,7 @@ function searchBandsInTown(artist) {
       var artistBio = $("#bio").text(response.artist.bio.summary);
     }); 
 
-    var queryURLLastFMRelated = "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" + artist + "&api_key=be77dd88db13854a4b6bcbd5d6a75bee&format=json";
+    var queryURLLastFMRelated = "https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" + artist + "&api_key=be77dd88db13854a4b6bcbd5d6a75bee&format=json";
     
     $.ajax({
       url:queryURLLastFMRelated,
