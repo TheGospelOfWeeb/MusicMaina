@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Mania</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light" style="background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
+        <a class="navbar-brand">Music Mania</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="artist-input">
+          <button class="btn btn-secondary btn-outline-success my-2 my-sm-0" style="color: white;" type="submit" id="select-artist">Search</button>
+        </form>
+    </nav>
+      <br>
+      <!--adding an image somewhere on the jumbotron-->        
+      <div class="jumbotron jumbotron-fluid" style="text-align:center; background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
+        <div class="container">
+          <!--this is where we could display the artist name once the have searched-->
+          <h1 class="display-4" id="artist-name">Artist</h1>
+          <!--Bio or someother text info. maybe like how many people searched him through the app idk-->
+          <p class="lead" id="bio">Bio</p>
+          <img id="artist-image" src="https://via.placeholder.com/150" alt="Artist-image">
+        </div>
+      </div>
+      
+      <br>
+      <br>
+
+    <div class="container">
+        <!--Thinking about maybe having the Top 5 Songs here. Up to you guys. left 5 div tags but it think we might 
+        be able to use JS to add them to the html with the songs-->
+        <div class="card border-dark mb-3" style="text-align:center; background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
+            <h5 class="card-header">Top 5 Songs</h5>
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <div id="top-five-songs"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--maybe add the related artist here-->
+        <div class="card border-dark mb-3" style="text-align:center; background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
+            <h5 class="card-header">Tracking</h5>
+            <div class="card-body">
+                <h5 class="card-title" id="tracker-num"></h5>
+                <div></div>
+            </div>
+        </div>
+        <!--we can keep adding these for extra stuff we might need. basically just add everthing from the api's to display in these cards-->
+        <div class="card border-dark mb-3" style="text-align:center; background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
+                <h5 class="card-header" id="num-of-tour-dates">Number of Unpcoming Events</h5>
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <div id="go-to-tour-dates"></div>
+            </div>
+        </div>
+
+        <div class="card border-dark mb-3" style="text-align:center; background-image: linear-gradient(#2bdce5, #0e81ba); color: white;">
+                <h5 class="card-header">Related Artist</h5>
+            <div class="card-body">
+                <h5 class="card-title" id="related-artist"></h5>
+                <div></div>
+            </div>
+        </div>
+    </div>
+<footer>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: GTCBC Group 4</div>
+</footer>    
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
+
