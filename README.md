@@ -1,5 +1,7 @@
 # Project-1
 
-# work 1
+## Music Maina
+## Music Inof & Spotify Music
 
-## Innovative Apps
+https://tacticalloli.github.io/MusicMaina/
+
