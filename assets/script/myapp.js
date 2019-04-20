@@ -1,16 +1,16 @@
 function getPlaylist(access_token, user_id) {
     console.log('getPlaylist');
-    $.ajax({ url: "https://api.spotify.com/v1/users/" + user_id + "/playlists", headers: { "Authorization": 'Bearer ' + access_token }, method: 'GET' }).then(function (res, err) {
+    $.ajax({ url: "https://api.spotify.com/v1/users/" + user_id + "/playlists", headers: { "Authorization": 'Bearer ' + access_token }, method: 'GET' }).then(function(res, err) {
         console.log('res: ', res);
         console.log('err: ', err);
         console.log('res.href: ', res.items[0].href);
         if (res) {
             // var playlists = JSON.parse(res.body);
             var playlist_url = res.items[0].href
-            $.ajax({ url: playlist_url, headers: { "Authorization": 'Bearer ' + access_token } }).then(function (res, err) {
+            $.ajax({ url: playlist_url, headers: { "Authorization": 'Bearer ' + access_token } }).then(function(res, err) {
                 if (res) {
                     console.log(res.tracks.items);
-                    res.tracks.items.forEach(function (track) {
+                    res.tracks.items.forEach(function(track) {
                         console.log(track.track.name);
                         let trackEl = `
                         <div class="track-el">
@@ -28,7 +28,7 @@ function getPlaylist(access_token, user_id) {
     })
 }
 
-(function () {
+(function() {
     var stateKey = 'spotify_auth_state';
     /**
      * Obtains parameters from the hash of the URL
@@ -59,7 +59,7 @@ function getPlaylist(access_token, user_id) {
     var userProfileSource = document.getElementById('user-profile-template').innerHTML,
         userProfileTemplate = Handlebars.compile(userProfileSource),
         userProfilePlaceholder = document.getElementById('user-profile');
-        oauthSource = document.getElementById('oauth-template').innerHTML,
+    oauthSource = document.getElementById('oauth-template').innerHTML,
         oauthTemplate = Handlebars.compile(oauthSource),
         oauthPlaceholder = document.getElementById('oauth');
     var params = getHashParams();
@@ -76,7 +76,7 @@ function getPlaylist(access_token, user_id) {
                 headers: {
                     'Authorization': 'Bearer ' + access_token
                 },
-                success: function (response) {
+                success: function(response) {
                     userProfilePlaceholder.innerHTML = userProfileTemplate(response);
                     console.log(response);
                     console.log(access_token);
@@ -90,7 +90,7 @@ function getPlaylist(access_token, user_id) {
             $('#login').show();
             $('#loggedin').hide();
         }
-        document.getElementById('login-button').addEventListener('click', function () {
+        document.getElementById('login-button').addEventListener('click', function() {
             var client_id = 'bdda5a905c86440392f593d9019ac9f1'; // Your client id
             var redirect_uri = 'https://tacticalloli.github.io/MusicMaina/'; // Your redirect uri
             var state = generateRandomString(16);

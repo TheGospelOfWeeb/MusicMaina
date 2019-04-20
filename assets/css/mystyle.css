@@ -1,3 +1,14 @@
+body {
+    background-image: url("../image/spotifyMusic.jpg");
+    background-repeat: repeat-y;
+}
+
+h1 {
+    float: inline-start;
+    padding: 25px;
+    color: lawngreen;
+}
+
 #login,
 #loggedin {
     display: none;
@@ -16,4 +27,22 @@
 
 .track-el {
     display: inline-block;
+}
+
+#login-button {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    position: relative;
+    transition: .5s ease;
+    top: 191px;
+    left: 500px;
+    right: -420px;
+    bottom: -191px;
+    margin: 4px 2px;
+}
+
+#login-button:hover {
+    background-color: #4CAF50;
+    color: white;
 }
