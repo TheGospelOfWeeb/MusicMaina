@@ -92,7 +92,8 @@ function getPlaylist(access_token, user_id) {
         }
         document.getElementById('login-button').addEventListener('click', function() {
             var client_id = 'bdda5a905c86440392f593d9019ac9f1'; // Your client id
-            var redirect_uri = 'https://tacticalloli.github.io/MusicMaina/'; // Your redirect uri
+            //var redirect_uri = 'https://tacticalloli.github.io/MusicMaina/'; // Your redirect uri
+            var redirect_uri = 'http://127.0.0.1:5500/spotify.html'; // Your redirect uri
             var state = generateRandomString(16);
             localStorage.setItem(stateKey, state);
             var scope = 'user-read-private user-read-email';
