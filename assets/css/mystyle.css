@@ -1,0 +1,56 @@
+body {
+    background-image: url("../image/spotifyMusic.jpg");
+    background-repeat: repeat-y;
+}
+
+h1 {
+    float: inline-start;
+    padding: 25px;
+    color: lawngreen;
+}
+
+#login,
+#loggedin {
+    display: none;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+}
+
+#track-div {
+    height: auto;
+}
+
+.track-el {
+    display: inline-block;
+}
+
+#login-button {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4CAF50;
+    color: black;
+    position: relative;
+    transition: .5s ease;
+    top: 191px;
+    left: 500px;
+    right: -420px;
+    bottom: -191px;
+    margin: 4px 2px;
+}
+
+#login-button:hover {
+    background-color: chartreuse;
+    color: white;
+}
+
+.dl-horizontal {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+}
