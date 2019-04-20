@@ -1,0 +1,21 @@
+
+Client ID bdda5a905c86440392f593d9019ac9f1
+
+Client Secret 3e7e420fdbc541e98617e0cef8cec2cb
+
+GET https://accounts.spotify.com/authorize
+
+
+
+https://accounts.spotify.com/authorize?client_id=bdda5a905c86440392f593d9019ac9f1&scopes=playlist-read-private&response_type=code&redirect_uri=https%3A%2F%2Ftacticalloli.github.io%2FMusicMaina%2F
+
+
+
+curl -H "Authorization: Basic YmRkYTVhOTA1Yzg2NDQwMzkyZjU5M2Q5MDE5YWM5ZjE6M2U3ZTQyMGZkYmM1NDFlOTg2MTdlMGNlZjhjZWMyY2I=" -d grant_type=authorization_code -d code=AQB9Dhxj2WIIsQRCvsQIFgNgbPZYUkS34Xb10kXbEStUr_VniDJng4Td3ASqVNB73VZnqhHS8vTH98VfYRATqjgHuAC15rWl5MGgQ5BWtqDKzPQMuJZZ_-T0HUmByzmNmpTWCU4gG8Qd1ygJ6UI23VlENEdED5IFAzRPtONllH7B_92EMFNI9g-7vbkwPIstUGQOWm4FcvYZCyUC0qlLugSI -d redirect_uri=https%3A%2F%2Ftacticalloli.github.io%2FMusicMaina%2F https://accounts.spotify.com/api/token
+
+
+bdda5a905c86440392f593d9019ac9f1:3e7e420fdbc541e98617e0cef8cec2cb
+
+
+{"access_token":"BQDRDdMFVe4kJCl8SgdjLMpwK1y2hDCLeQyBvrlIBFKQv6-OdsMRsDxNbUhd3YQhfn5QneaQkOlG5gami0xtRE48gutKKjmG4Yp4mSVxL62eNcF5_S6gAA_Lr1RpwGMZi6G8IqA7JunsDm8HG24qpmgYx94iWoA-ctLj","token_type":"Bearer","expires_in":3600,"refresh_token":"AQDXN3VOoACaov39IoZFker5qSI15UxtfCwb➜  ~➜ ➜ ➜ ➜ ➜  ~ 
+

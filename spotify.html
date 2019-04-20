@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> My Spotify Music</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="login">
+            <h1>My Spotify Music Maina</h1>
+            <button id="login-button" class="btn btn-primary">Login with Spotify</button>
+        </div>
+        <div id="loggedin">
+            <div id="user-profile">
+            </div>
+            <div id="oauth">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10" id="track-div"></div>
+        </div>
+    </div>
+
+    <script id="user-profile-template" type="text/x-handlebars-template">
+        <h1>Logged in as {{display_name}}</h1>
+        <div class="media">
+            <div class="pull-left">
+                <img class="media-object" width="150" src="{{images.0.url}}" />
+            </div>
+            <div class="media-body">
+                <dl class="dl-horizontal">
+                    <dt>Name :</dt>
+                    <dd class="clearfix">{{display_name}}</dd>
+                    <dt>Email :</dt>
+                    <dd>{{email}}</dd>
+                    <dt>Country :</dt>
+                    <dd>{{country}}</dd>
+                </dl>
+            </div>
+        </div>
+    </script>
+
+    <script id="oauth-template" type="text/x-handlebars-template">
+        <h2>oAuth info</h2>
+        <dl class="dl-horizontal">
+            <dt>Access token</dt>
+            <dd class="text-overflow">{{access_token}}</dd>
+        </dl>
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="assets/script/myapp.js"></script>
+</body>
+
+</html>
