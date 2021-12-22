@@ -3,5 +3,5 @@
 ## Music Maina
 ## Music Inof & Spotify Music
 
-https://tacticalloli.github.io/MusicMaina/
+https://thegospelofweeb.github.io/MusicMaina/
 
